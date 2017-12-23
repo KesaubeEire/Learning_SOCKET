@@ -1,0 +1,6 @@
+/Users/w/Projects/SOCKEY_TCP/ChangeInputType/bin/Debug/ChangeInputType.exe
+/Users/w/Projects/SOCKEY_TCP/ChangeInputType/bin/Debug/ChangeInputType.pdb
+/Users/w/Projects/SOCKEY_TCP/ChangeInputType/obj/x86/Debug/ChangeInputType.csproj.CoreCompileInputs.cache
+/Users/w/Projects/SOCKEY_TCP/ChangeInputType/obj/x86/Debug/ChangeInputType.exe
+/Users/w/Projects/SOCKEY_TCP/ChangeInputType/obj/x86/Debug/ChangeInputType.pdb
+/Users/w/Projects/SOCKEY_TCP/ChangeInputType/obj/x86/Debug/ChangeInputType.csprojResolveAssemblyReference.cache

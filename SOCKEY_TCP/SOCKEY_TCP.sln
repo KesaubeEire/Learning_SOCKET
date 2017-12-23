@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOCKEY_TCP_HOST", "SOCKEY_TCP\SOCKEY_TCP_HOST.csproj", "{D74798E8-24E3-4801-A67A-4EB0E2EC2A39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOCKEY_TCP_Client", "SOCKEY_TCP_Client\SOCKEY_TCP_Client.csproj", "{C352CDCE-96F2-412E-9FD3-1970367F5F04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeInputType", "ChangeInputType\ChangeInputType.csproj", "{61E10E25-EC64-4FB6-8B26-B90F6A3D76F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D74798E8-24E3-4801-A67A-4EB0E2EC2A39}.Debug|x86.ActiveCfg = Debug|x86
+		{D74798E8-24E3-4801-A67A-4EB0E2EC2A39}.Debug|x86.Build.0 = Debug|x86
+		{D74798E8-24E3-4801-A67A-4EB0E2EC2A39}.Release|x86.ActiveCfg = Release|x86
+		{D74798E8-24E3-4801-A67A-4EB0E2EC2A39}.Release|x86.Build.0 = Release|x86
+		{C352CDCE-96F2-412E-9FD3-1970367F5F04}.Debug|x86.ActiveCfg = Debug|x86
+		{C352CDCE-96F2-412E-9FD3-1970367F5F04}.Debug|x86.Build.0 = Debug|x86
+		{C352CDCE-96F2-412E-9FD3-1970367F5F04}.Release|x86.ActiveCfg = Release|x86
+		{C352CDCE-96F2-412E-9FD3-1970367F5F04}.Release|x86.Build.0 = Release|x86
+		{61E10E25-EC64-4FB6-8B26-B90F6A3D76F8}.Debug|x86.ActiveCfg = Debug|x86
+		{61E10E25-EC64-4FB6-8B26-B90F6A3D76F8}.Debug|x86.Build.0 = Debug|x86
+		{61E10E25-EC64-4FB6-8B26-B90F6A3D76F8}.Release|x86.ActiveCfg = Release|x86
+		{61E10E25-EC64-4FB6-8B26-B90F6A3D76F8}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

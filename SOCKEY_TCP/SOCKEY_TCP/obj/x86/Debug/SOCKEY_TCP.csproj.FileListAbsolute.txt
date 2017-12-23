@@ -1,0 +1,5 @@
+/Users/w/Projects/SOCKEY_TCP/SOCKEY_TCP/bin/Debug/SOCKEY_TCP.exe
+/Users/w/Projects/SOCKEY_TCP/SOCKEY_TCP/bin/Debug/SOCKEY_TCP.pdb
+/Users/w/Projects/SOCKEY_TCP/SOCKEY_TCP/obj/x86/Debug/SOCKEY_TCP.csproj.CoreCompileInputs.cache
+/Users/w/Projects/SOCKEY_TCP/SOCKEY_TCP/obj/x86/Debug/SOCKEY_TCP.exe
+/Users/w/Projects/SOCKEY_TCP/SOCKEY_TCP/obj/x86/Debug/SOCKEY_TCP.pdb

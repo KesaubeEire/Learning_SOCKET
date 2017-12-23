@@ -1,0 +1,20 @@
+﻿<Properties StartupConfiguration="{D74798E8-24E3-4801-A67A-4EB0E2EC2A39}|Default">
+  <MonoDevelop.Ide.ItemProperties.SOCKEY__TCP__HOST PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.SOCKEY__TCP__Client PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.ChangeInputType PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SOCKEY_TCP_Client/Program.cs">
+    <Files>
+      <File FileName="SOCKEY_TCP/Program.cs" Line="111" Column="9" />
+      <File FileName="ChangeInputType/Program.cs" Line="23" Column="1" NotebookId="1" />
+      <File FileName="SOCKEY_TCP_Client/Program.cs" Line="11" Column="20" NotebookId="1" />
+      <File FileName="SOCKEY_TCP/Message.cs" Line="10" Column="1" NotebookId="1" />
+      <File FileName="SOCKEY_TCP_Client/Messege.cs" Line="19" Column="29" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
