@@ -2,7 +2,6 @@
 using System.Net.Sockets;
 using System.Net;
 using System.Text;
-using SOCKEY_TCP;
 
 namespace SOCKEY_TCP_HOST
 {
@@ -99,7 +98,7 @@ namespace SOCKEY_TCP_HOST
             //IpAddress xxx.xx.xx.xx IPENdPOINT xxx.xx.xx.xx:port
             //IPAddress ipAddress = new IPAddress(new byte[]{192.168.31.255}); 老方法，不推荐使用
             IPAddress ip_Address = IPAddress.Parse("192.168.31.122");
-            IPEndPoint ip_EndPoint = new IPEndPoint(ip_Address, 8288);
+            IPEndPoint ip_EndPoint = new IPEndPoint(ip_Address, 8089);
 
             serverSocket.Bind(ip_EndPoint);//绑定ip和端口号
             serverSocket.Listen(50);//开始监听，同时监听的端口数最大值，0为不限制
@@ -108,9 +107,9 @@ namespace SOCKEY_TCP_HOST
             serverSocket.BeginAccept(AcceptCallBack, serverSocket);
         }
 
-        static int repeatNumMax = 0;
-        //判定重复发送0的次数，用于检测（非法的）客户端关闭
+        static byte[] dataBuffer = new byte[1024];//1024是字符数量大小
 
+        static int repeatNumMax = 0;
         /// <summary>
         /// 一个回调函数，负责异步返回消息
         /// </summary>
@@ -129,19 +128,13 @@ namespace SOCKEY_TCP_HOST
                 if (repeatNumMax >= 5)
                 {
                     Console.WriteLine("检测到某客户端断开");
-                    clientSocket.Close();
+                    clientSocket.Close(); 
                     return;
                 }
-                msg.AddCount(count);
-                //更新收到的数据的长度（在Message_Host类里）
 
-                //更新的Message_Host类不使用这种方式显示数据
-                //string msgStr = Encoding.UTF8.GetString(dataBuffer, 0, count);
-                //Console.WriteLine("从客户端异步接收到数据：" + "(" + count + ")" + "\t" + msgStr);
-
-                msg.ReadMessage();
-
-                clientSocket.BeginReceive(msg.Data, 0, 1024, SocketFlags.None, ReceiveCallBack, clientSocket);
+                string msg = Encoding.UTF8.GetString(dataBuffer, 0, count);
+                Console.WriteLine("从客户端异步接收到数据：" + "(" + count + ")" + "\t" + msg);
+                clientSocket.BeginReceive(dataBuffer, 0, 1024, SocketFlags.None, ReceiveCallBack, clientSocket);
                 //循环回调
             }
             catch (Exception ex)
@@ -154,12 +147,6 @@ namespace SOCKEY_TCP_HOST
             }
         }
 
-        static byte[] dataBuffer = new byte[1024];
-        //1024是字符数量大小
-        //这个放弃了，为了解决那个粘包分包的问题用了Message_Host类
-
-        static Message_Host msg = new Message_Host();
-
         /// <summary>
         /// 回调函数，负责异步接受信息
         /// </summary>
@@ -170,20 +157,16 @@ namespace SOCKEY_TCP_HOST
             Socket serverSocket = ar.AsyncState as Socket;
             Socket clientSocket = serverSocket.EndAccept(ar);
             //向客户段发送一条消息
-            string msgStr = "Good Luck Guy, Say Something";
+            string msg = "Good Luck Guy, Say Something";
 
             ///发送时需要将信息转化为数组，接受时需要先定义一个数组存入消息
 
-            byte[] data = System.Text.Encoding.UTF8.GetBytes(msgStr);//使用这种方式将输入的信息转换为字节数组，必须要这么做
+            byte[] data = System.Text.Encoding.UTF8.GetBytes(msg);//使用这种方式将输入的信息转换为字节数组，必须要这么做
             clientSocket.Send(data);//发送消息
 
 
             //异步接受数据,very important
-            //clientSocket.BeginReceive(dataBuffer, 0, 1024, SocketFlags.None, ReceiveCallBack, clientSocket);
-            //为了解决粘包分包问题，将msg变为了使用一个新建的Message_Host类，转换了读取方式
-
-            //异步接受数据,very important
-            clientSocket.BeginReceive(msg.Data, msg.StartIndex, msg.RemainSize, SocketFlags.None, ReceiveCallBack, clientSocket);
+            clientSocket.BeginReceive(dataBuffer, 0, 1024, SocketFlags.None, ReceiveCallBack, clientSocket);
 
             serverSocket.BeginAccept(AcceptCallBack, serverSocket);
             //循环回调等待下一个信息传来
