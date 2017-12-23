@@ -3,3 +3,7 @@
 /Users/w/Projects/SOCKEY_TCP/SOCKEY_TCP_Client/obj/x86/Debug/SOCKEY_TCP_Client.csproj.CoreCompileInputs.cache
 /Users/w/Projects/SOCKEY_TCP/SOCKEY_TCP_Client/obj/x86/Debug/SOCKEY_TCP_Client.exe
 /Users/w/Projects/SOCKEY_TCP/SOCKEY_TCP_Client/obj/x86/Debug/SOCKEY_TCP_Client.pdb
+D:\DaSan\C#\Git_SOCKET\SOCKEY_TCP\SOCKEY_TCP_Client\bin\Debug\SOCKEY_TCP_Client.exe
+D:\DaSan\C#\Git_SOCKET\SOCKEY_TCP\SOCKEY_TCP_Client\bin\Debug\SOCKEY_TCP_Client.pdb
+D:\DaSan\C#\Git_SOCKET\SOCKEY_TCP\SOCKEY_TCP_Client\obj\x86\Debug\SOCKEY_TCP_Client.exe
+D:\DaSan\C#\Git_SOCKET\SOCKEY_TCP\SOCKEY_TCP_Client\obj\x86\Debug\SOCKEY_TCP_Client.pdb
