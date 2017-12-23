@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOCKEY_TCP_Client", "SOCKEY
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeInputType", "ChangeInputType\ChangeInputType.csproj", "{61E10E25-EC64-4FB6-8B26-B90F6A3D76F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quatation", "Quatation\Quatation.csproj", "{428D25E4-C917-4F8E-BCC1-83F6C5459C57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,5 +27,9 @@ Global
 		{61E10E25-EC64-4FB6-8B26-B90F6A3D76F8}.Debug|x86.Build.0 = Debug|x86
 		{61E10E25-EC64-4FB6-8B26-B90F6A3D76F8}.Release|x86.ActiveCfg = Release|x86
 		{61E10E25-EC64-4FB6-8B26-B90F6A3D76F8}.Release|x86.Build.0 = Release|x86
+		{428D25E4-C917-4F8E-BCC1-83F6C5459C57}.Debug|x86.ActiveCfg = Debug|x86
+		{428D25E4-C917-4F8E-BCC1-83F6C5459C57}.Debug|x86.Build.0 = Debug|x86
+		{428D25E4-C917-4F8E-BCC1-83F6C5459C57}.Release|x86.ActiveCfg = Release|x86
+		{428D25E4-C917-4F8E-BCC1-83F6C5459C57}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

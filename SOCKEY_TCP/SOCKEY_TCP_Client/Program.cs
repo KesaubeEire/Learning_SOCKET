@@ -1,7 +1,13 @@
 ﻿using System;
-using System.Net.Sockets;
 using System.Net;
+using System.Net.Sockets;
 using System.Text;
+using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
+using SOCKEY_TCP_HOST;
 
 namespace SOCKEY_TCP_Client
 {
@@ -12,6 +18,10 @@ namespace SOCKEY_TCP_Client
         static string port_exit = "正常退出";
         static string port_OnEntering = "加入服务器";
         ///其他预设
+        //static string ipCommom = "192.168.31.122";
+
+        //string iphost = mainhostlaunch.ipcommom;
+        //int portHost = MainHostLaunch.portCommom;
 
         /// <summary>
         /// 客户端代码
@@ -19,8 +29,10 @@ namespace SOCKEY_TCP_Client
         /// <param name="args">The command-line arguments.</param>
         public static void Main(string[] args)
         {
+
             Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            clientSocket.Connect(new IPEndPoint(IPAddress.Parse("192.168.31.122"), 8089));
+            clientSocket.Connect(new IPEndPoint(IPAddress.Parse("192.168.31.122"), 8218));
+            //clientSocket.Connect(new IPEndPoint(IPAddress.Parse(ipHost), portHost));
 
             byte[] data = new byte[1024];
             int count = clientSocket.Receive(data);

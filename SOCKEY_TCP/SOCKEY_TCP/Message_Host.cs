@@ -1,17 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
+using System.Text;
 
 namespace SOCKEY_TCP
 {
-    class Message_Host
+     class Message_Host
     {
         private byte[] data = new byte[1024];
         private int startIndex = 0;//代表我们存取了多少个字节的数据在数组里面
 
-        public byte[] Data { get { return Data; } }
+          public byte[] Data { get { return Data; } }
         public int StartIndex { get { return startIndex; } }
         public int RemainSize { get { return data.Length - startIndex; } }// 显示剩余的空间大小
 

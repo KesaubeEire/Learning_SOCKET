@@ -2,14 +2,31 @@
   <MonoDevelop.Ide.ItemProperties.SOCKEY__TCP__HOST PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.SOCKEY__TCP__Client PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.ItemProperties.ChangeInputType PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SOCKEY_TCP_Client/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SOCKEY_TCP/Message_Host.cs">
     <Files>
-      <File FileName="SOCKEY_TCP/Program.cs" Line="111" Column="9" />
-      <File FileName="ChangeInputType/Program.cs" Line="23" Column="1" NotebookId="1" />
-      <File FileName="SOCKEY_TCP_Client/Program.cs" Line="11" Column="20" NotebookId="1" />
-      <File FileName="SOCKEY_TCP/Message.cs" Line="10" Column="1" NotebookId="1" />
-      <File FileName="SOCKEY_TCP_Client/Messege.cs" Line="19" Column="29" NotebookId="1" />
+      <File FileName="SOCKEY_TCP_Client/Program.cs" Line="34" Column="52" />
+      <File FileName="SOCKEY_TCP/Program.cs" Line="9" Column="12" />
+      <File FileName="SOCKEY_TCP_Client/Messege.cs" Line="11" Column="23" />
+      <File FileName="SOCKEY_TCP/Message_Host.cs" Line="16" Column="1" />
+      <File FileName="ChangeInputType/Program.cs" Line="23" Column="1" />
+      <File FileName="Quatation/Quatation_01.cs" Line="5" Column="11" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SOCKEY_TCP" expanded="True">
+            <Node name="ChangeInputType" expanded="True" />
+            <Node name="Quatation" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+            <Node name="SOCKEY_TCP_Client" expanded="True" />
+            <Node name="SOCKEY_TCP_HOST" expanded="True">
+              <Node name="Message_Host.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

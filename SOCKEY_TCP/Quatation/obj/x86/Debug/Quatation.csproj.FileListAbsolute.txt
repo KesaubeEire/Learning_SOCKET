@@ -1,0 +1,6 @@
+/Users/w/Projects/Git_SOCKET/SOCKEY_TCP/Quatation/obj/x86/Debug/Quatation.csprojResolveAssemblyReference.cache
+/Users/w/Projects/Git_SOCKET/SOCKEY_TCP/Quatation/obj/x86/Debug/Quatation.csproj.CoreCompileInputs.cache
+/Users/w/Projects/Git_SOCKET/SOCKEY_TCP/Quatation/bin/Debug/Quatation.exe
+/Users/w/Projects/Git_SOCKET/SOCKEY_TCP/Quatation/bin/Debug/Quatation.pdb
+/Users/w/Projects/Git_SOCKET/SOCKEY_TCP/Quatation/obj/x86/Debug/Quatation.exe
+/Users/w/Projects/Git_SOCKET/SOCKEY_TCP/Quatation/obj/x86/Debug/Quatation.pdb

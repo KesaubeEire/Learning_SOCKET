@@ -6,8 +6,12 @@ using SOCKEY_TCP;
 
 namespace SOCKEY_TCP_HOST
 {
-    class MainClass
+    public  class MainHostLaunch
     {
+        /// 一些预设值
+        public static string ipCommom = "192.168.31.122";
+        public static int portCommom = 8218;
+
         /// <summary>
         /// 服务器端的代码
         /// </summary>
@@ -17,7 +21,11 @@ namespace SOCKEY_TCP_HOST
             //StartServerASync_to1();
             StartServerSync_to_a_lot();
             Console.ReadKey();
+
         }
+
+        /*
+
         /// <summary>
         /// 同 步 方 式
         /// </summary>
@@ -29,8 +37,8 @@ namespace SOCKEY_TCP_HOST
             //绑定ip 本机 127.0.0.1
             //IpAddress xxx.xx.xx.xx IPENdPOINT xxx.xx.xx.xx:port
             //IPAddress ipAddress = new IPAddress(new byte[]{192.168.31.255}); 老方法，不推荐使用
-            IPAddress ip_Address = IPAddress.Parse("192.168.31.122");
-            IPEndPoint ip_EndPoint = new IPEndPoint(ip_Address, 8081);
+            IPAddress ip_Address = IPAddress.Parse(ipCommom);
+            IPEndPoint ip_EndPoint = new IPEndPoint(ip_Address, 7085);
 
             serverSocket.Bind(ip_EndPoint);//绑定ip和端口号
             serverSocket.Listen(50);//开始监听，同时监听的端口数最大值，0为不限制
@@ -87,6 +95,8 @@ namespace SOCKEY_TCP_HOST
 
         }
 
+        */
+
         /// <summary>
         /// 异步方式多个客户端
         /// </summary>
@@ -98,8 +108,8 @@ namespace SOCKEY_TCP_HOST
             //绑定ip 本机 127.0.0.1
             //IpAddress xxx.xx.xx.xx IPENdPOINT xxx.xx.xx.xx:port
             //IPAddress ipAddress = new IPAddress(new byte[]{192.168.31.255}); 老方法，不推荐使用
-            IPAddress ip_Address = IPAddress.Parse("192.168.31.122");
-            IPEndPoint ip_EndPoint = new IPEndPoint(ip_Address, 8288);
+            IPAddress ip_Address = IPAddress.Parse(ipCommom);
+            IPEndPoint ip_EndPoint = new IPEndPoint(ip_Address, portCommom);
 
             serverSocket.Bind(ip_EndPoint);//绑定ip和端口号
             serverSocket.Listen(50);//开始监听，同时监听的端口数最大值，0为不限制
